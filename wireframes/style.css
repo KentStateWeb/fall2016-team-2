@@ -1,11 +1,19 @@
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
 body
 {
   max-width: 1000px;
   padding: 1em;
   background-color: #61574B;
   color: #d3d3d3;
+<<<<<<< HEAD
   font-family: 'Raleway', sans-serif;
+=======
+  font-family:'Raleway', sans-serif;
+>>>>>>> origin/master
 }
+
 
 div, section, aside, header, main, footer, .homePageContent
 {
@@ -36,10 +44,19 @@ h3{
 
 /* Reservations Page */
 /* Calendar Box */
+<<<<<<< HEAD
 .days, .weekdays
 ul{
   list-style-type: none;
   font-family: sans-serif;
+=======
+.days .weekdays ul{
+  list-style-type: none;
+<<<<<<< Updated upstream
+  font-family:'Raleway', sans-serif;
+=======
+>>>>>>> Stashed changes
+>>>>>>> origin/master
 }
 
 .calendarBox ul{
