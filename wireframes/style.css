@@ -75,3 +75,8 @@ ul{
   font-size: 12px;
   color: gray;
 }
+
+.packageBox{
+  color: blue;
+  text-decoration: underline;
+}
