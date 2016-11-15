@@ -4,7 +4,7 @@ body
   padding: 1em;
   background-color: #61574B;
   color: #d3d3d3;
-  font-family: 'Raleway', sans-serif;
+  font-family: sans-serif;
 }
 
 div, section, aside, header, main, footer, .homePageContent
@@ -34,10 +34,12 @@ h3{
   line-height: 125px;
 }
 
+/* Reservations Page */
+/* Calendar Box */
 .days, .weekdays
 ul{
   list-style-type: none;
-  font-family: Veranda, sans-serif;
+  font-family: sans-serif;
 }
 
 .calendarBox ul{
@@ -78,6 +80,7 @@ ul{
   color: gray;
 }
 
+/* Package Container*/
 .packageBox{
   color: blue;
   text-decoration: underline;
