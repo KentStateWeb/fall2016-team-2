@@ -1,14 +1,16 @@
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
 body
 {
   max-width: 1000px;
   padding: 1em;
   background-color: #61574B;
   color: #d3d3d3;
-  font-family: sans-serif;
+  font-family:'Raleway', sans-serif;
 }
-.basic-list{
-  font-family: sans-serif;
-}
+
+
 div, section, aside, header, main, footer, .homePageContent
 {
   border: 1px solid lightgray;
@@ -38,10 +40,10 @@ h3{
 
 /* Reservations Page */
 /* Calendar Box */
-.days, .weekdays{
+.days .weekdays ul{
   list-style-type: none;
 <<<<<<< Updated upstream
-  font-family: sans-serif;
+  font-family:'Raleway', sans-serif;
 =======
 >>>>>>> Stashed changes
 }
