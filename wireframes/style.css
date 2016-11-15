@@ -6,7 +6,9 @@ body
   color: #d3d3d3;
   font-family: sans-serif;
 }
-
+.basic-list{
+  font-family: sans-serif;
+}
 div, section, aside, header, main, footer, .homePageContent
 {
   border: 1px solid lightgray;
