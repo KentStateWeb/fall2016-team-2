@@ -1,11 +1,77 @@
-body {
+body
+{
   max-width: 1000px;
   padding: 1em;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-div, section, main, aside, header, footer {
+div, section, aside, header, main, footer, .homePageContent
+{
   border: 1px solid lightgray;
   padding: .5em;
   margin-bottom: 1em;
+}
+
+li
+{
+  display: inLine;
+}
+
+header, main, .eventsBox
+{
+  text-align: center;
+}
+
+h3{
+  text-align: left;
+}
+
+.pictureBox{
+  background-color: gray;
+  height: 250px;
+  line-height: 125px;
+}
+
+.days, .weekdays
+ul{
+  list-style-type: none;
+  font-family: Veranda, sans-serif;
+}
+
+.calendarBox ul{
+  margin: 0;
+  padding: 0;
+}
+
+.calendarBox ul, li{
+  color: gray;
+  font-size: 20px;
+  text=transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.weekdays{
+  margin: 0;
+  padding: 10px 0;
+  background-color: gray;
+}
+.weekdays li{
+  display: inline-block;
+  width: 13.6%;
+  color: black;
+  text-align: center;
+}
+.days{
+  padding: 10px 0;
+  backgound: blue;
+  margin: 0;
+}
+.days li{
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: gray;
 }
