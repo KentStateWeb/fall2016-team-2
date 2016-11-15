@@ -36,8 +36,7 @@ h3{
 
 /* Reservations Page */
 /* Calendar Box */
-.days, .weekdays
-ul{
+.days, .weekdays{
   list-style-type: none;
 <<<<<<< Updated upstream
   font-family: sans-serif;
