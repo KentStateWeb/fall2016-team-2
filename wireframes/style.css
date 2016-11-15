@@ -5,10 +5,12 @@ body
 {
   max-width: 1000px;
   padding: 1em;
+}
+
+*{
   background-color: #61574B;
   color: #d3d3d3;
-  font-family:'Raleway', sans-serif;
-}
+  font-family:'Raleway', sans-serif;}
 
 
 div, section, aside, header, main, footer, .homePageContent
@@ -18,10 +20,6 @@ div, section, aside, header, main, footer, .homePageContent
   margin-bottom: 1em;
 }
 
-li
-{
-  display: inLine;
-}
 
 header, main, .eventsBox
 {
@@ -40,23 +38,17 @@ h3{
 
 /* Reservations Page */
 /* Calendar Box */
-.days .weekdays ul{
-  list-style-type: none;
-<<<<<<< Updated upstream
-  font-family:'Raleway', sans-serif;
-=======
->>>>>>> Stashed changes
-}
+
 
 .calendarBox ul{
   margin: 0;
   padding: 0;
 }
 
-.calendarBox ul, li{
+.calendarBox ul li{
   color: gray;
   font-size: 20px;
-  text=transform: uppercase;
+  text-transform: uppercase;
   letter-spacing: 3px;
 }
 
