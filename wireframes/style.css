@@ -39,7 +39,10 @@ h3{
 .days, .weekdays
 ul{
   list-style-type: none;
+<<<<<<< Updated upstream
   font-family: sans-serif;
+=======
+>>>>>>> Stashed changes
 }
 
 .calendarBox ul{
