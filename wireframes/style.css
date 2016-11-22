@@ -36,9 +36,17 @@ h3{
   line-height: 125px;
 }
 
+.navList{
+  text-align: left;
+  list-style: none;
+}
+
 /* Reservations Page */
 /* Calendar Box */
 
+.monthHeader li{
+  list-style-type: none;
+}
 
 .calendarBox ul{
   margin: 0;
@@ -56,6 +64,7 @@ h3{
   margin: 0;
   padding: 10px 0;
   background-color: gray;
+
 }
 .weekdays li{
   display: inline-block;
