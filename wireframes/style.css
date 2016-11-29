@@ -1,4 +1,8 @@
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+@import url('res.css');
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+</style>
 
 
 body
