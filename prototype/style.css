@@ -1,16 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Varela+Round');
 
 
 body
 {
-  max-width: 1000px;
-  padding: 1em;
-}
-
-*{
   background-color: #61574B;
   color: #d3d3d3;
   font-family:'Raleway', sans-serif;
+  max-width: 1000px;
+  padding: 1em;
 }
 
 
@@ -31,7 +28,8 @@ h3{
   text-align: left;
 }
 
-.pictureBox{
+.pictureBox
+{
   background-color: gray;
   height: 250px;
   line-height: 125px;
@@ -41,35 +39,41 @@ h3{
 /* Calendar Box */
 
 
-.calendarBox ul{
+.calendarBox ul
+{
   margin: 0;
   padding: 0;
 }
 
-.calendarBox ul li{
+.calendarBox ul li
+{
   color: gray;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
 
-.weekdays{
+.weekdays
+{
   margin: 0;
   padding: 10px 0;
   background-color: gray;
 }
-.weekdays li{
+.weekdays li
+{
   display: inline-block;
   width: 13.6%;
   color: black;
   text-align: center;
 }
-.days{
+.days
+{
   padding: 10px 0;
   backgound: blue;
   margin: 0;
 }
-.days li{
+.days li
+{
   list-style-type: none;
   display: inline-block;
   width: 13.6%;
@@ -83,4 +87,33 @@ h3{
 .packageBox{
   color: blue;
   text-decoration: underline;
+}
+
+
+/*footer*/
+
+footer
+{
+  background-color: #ededed;
+  color: #61574B;
+  font-family: 'Varela Round', sans-serif;
+  display:flex;
+}
+
+.footerBar li {
+  list-style: none;
+}
+
+.footerLogo {
+  width: 100px;
+}
+
+.footerSM{
+  width: 60px;
+}
+
+#footerIcons{
+  margin-left: auto;
+  border: none;
+
 }
