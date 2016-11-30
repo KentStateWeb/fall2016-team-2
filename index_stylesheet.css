@@ -1,8 +1,14 @@
 
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Varela+Round');
 
-*{
+body{
   background-color: #61574B;
   color: #d3d3d3;
-  font-family:'Raleway', sans-serif;
-}
+  padding: .5em;}
+
+h1, h2{
+  font-family:'Raleway', sans-serif;}
+
+a{
+  font-family: 'Varela Round', sans-serif;
+  color:#d3d3d3}
