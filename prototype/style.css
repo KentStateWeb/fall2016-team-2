@@ -20,14 +20,14 @@ body
   padding: 1em;
 }
 
-
+/*
 div, section, aside, header, main, footer, .homePageContent
 {
   border: 1px solid lightgray;
   padding: .5em;
   margin-bottom: 1em;
 }
-
+*/
 
 header, main, .eventsBox
 {
@@ -128,5 +128,40 @@ footer
 #footerIcons{
   margin-left: auto;
   border: none;
+}
 
+/* Carousel Styling */
+
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: 0px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+/* If you're using images in your slider, add this CSS to ensure they take up 100% of the available area */
+
+.carousel-cell {
+    width: 100%;
+}
+
+.carousel-cell img {
+    width: 100%;
+    height: auto;
+}
+
+/* Ensures that Flickity waits until CSS has loaded to calculate the height of the cells */
+.carousel:after {
+  content: 'flickity';
+  display: none; /* hide :after */
 }

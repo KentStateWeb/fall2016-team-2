@@ -22,12 +22,30 @@
       <li><a href="prototype/reservations.html"> Rooms & Rates </a></li>
     </ul>
   </header>
-  <main>
-    <div class = "pictureBox">
-    Welcome
-  </br>
-    [Carousel Picture]
-  </div>
+  <main class = "mainIndexContent">
+    <div class="carousel js-flickity" data-flickity-options='{ "imagesLoaded":"true", "autoPlay": "true", "watchCSS":"true" }'
+             >
+      <div class="carousel-cell">
+                <img src="images/Carousel_Home1.jpg">
+        </div>
+      <div class="carousel-cell">
+                <img src="images/Carousel_Home2.jpg">
+        </div>
+        <div class="carousel-cell">
+                <img src="images/Carousel_Home3.jpg">
+        </div>
+        <div class="carousel-cell">
+                <img src="images/Carousel_Home4.jpg">
+        </div>
+        <div class="carousel-cell">
+                <img src="images/Carousel_Home5.jpg">
+        </div>
+    </div>
+
+    <!-- Flickity hosts the appropriate CSS and JavaScript for you, so you don't need to download them if you don't want to.  Add the Flickity JavaScript and CSS File to the end of your HTML (before the closing body tag) -->
+
+    <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
   </main>
 
        <h1>  </h1>
