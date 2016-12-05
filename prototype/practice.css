@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Varela+Round');
 
-
-
 main
 {
   text-align: center;
@@ -77,7 +75,13 @@ li a:hover, .dropdown:hover .dropbtn{
   list-style-type: none;
   display: flex;
   color: #61574B;
+  padding: 0;
+}
 
+@media screen and (min-width: 550px){
+.menuBar ul,li{
+  flex-wrap: wrap;
+  }
 }
 
 .menu-content, .regular-menu-item, .dropdown, .dropdown-content, .dropbtn{
@@ -87,6 +91,10 @@ li a:hover, .dropdown:hover .dropbtn{
 
 .menu-content, .dropdown-content,.dropbtn{
   padding: 1em;
+}
+
+.menuListItems{
+
 }
 
 @media screen and (min-width: 550px)
@@ -150,7 +158,6 @@ padding: 3em;
 {
   .reservationsBoxes{
     display: flex;
-    flex: 1;
 }
 
 
