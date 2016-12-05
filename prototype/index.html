@@ -4,41 +4,88 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Title Goes Here</title>
+    <title>Buckeye Bed & Breakfast - Home</title>
     <meta name="description" content="Page Description Goes Here">
+    <script type="text/javascript" src="script"></script>
   </head>
 
   <body>
     <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
     <header>
-      Buckeye Bed & Breakfast
-    </br>
-    <ul class ="navBar">
-      <li><a href="prototype/about.html">About Us</a></li>
-      <li> Attractions & Activities </li>
-      <li> Availability </li>
-      <li> Blog </li>
-      <li> Promotions & Packages </li>
-      <li><a href="prototype/reservations.html"> Rooms & Rates </a></li>
-    </ul>
-  </header>
-  <main class = "mainIndexContent">
-    <div class="carousel js-flickity" data-flickity-options='{ "imagesLoaded":"true", "autoPlay": "true", "watchCSS":"true" }'
-             >
-      <div class="carousel-cell">
-                <img src="images/Carousel_Home1.jpg">
+    <a href="index.html"><img class = "bbbMenuLogo" src = "images/buckeye.svg"/></a>
+    <!-- This is your navigation menu trigger.  It only shows for small screens.  You can style it any way you want, including as a hamburger menu.-->
+    <!-- This includes hamburger code from Erik Terwan: http://codepen.io/terwanerik/pen/EVzeRP -->
+    <a href="#menu" class="menu-link">
+        <div class="menu-link__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-      <div class="carousel-cell">
-                <img src="images/Carousel_Home2.jpg">
+        <div class="menu-link__label">Menu</div>
+    </a>
+
+    <nav class="menuBar" role="navigation">
+                <ul class = "menuListItems">
+                  <li>
+                    <div class = "dropdown">
+                      <button class = "dropbtn">About Us</button>
+                      <div class = "dropdown-content">
+                      <a href = "#">Amenities</a>
+                      <a href = "#">Contact Info & Location</a>
+                      <a href = "#">History</a>
+                      <a href = "#">Policies</a>
+                      <a href = "#">Reviews</a>
+                    </div>
+                  </div>
+                  </li>
+                    <li>
+                      <div class = "dropdown">
+                        <button class = "dropbtn">Attractions & Activities</button>
+                        <div class = "dropdown-content">
+                        <a href = "#">Activities</a>
+                        <a href = "#">Dining</a>
+                    </li>
+
+                    <li><a href="#">Availability</a></li>
+                    <li>
+                      <div class = "dropdown">
+                        <button class = "dropbtn">Blog</button>
+                        <div class = "dropdown-content">
+                    </li>
+                      <div class = "dropdown">
+                        <button class = "dropbtn">Packages & Promotions</button>
+                        <div class = "dropdown-content">
+                    </li>
+                    <li>
+                      <div class = "dropdown">
+                        <button class = "dropbtn">Rooms & Rates</button>
+                        <div class = "dropdown-content">
+                        <a href = "#">Availability</a>
+                        <a href = "#">Rooms</a>
+                    </li>
+                </ul>
+    </nav>
+    </header>
+
+
+
+    <main class = "mainIndexContent">
+      <div class="carousel js-flickity" data-flickity-options='{ "imagesLoaded":"true", "autoPlay": "true", "watchCSS":"true" }'>
+        <div class="carousel-cell">
+          <img src="images/Carousel_Home1.jpg">
         </div>
         <div class="carousel-cell">
-                <img src="images/Carousel_Home3.jpg">
+          <img src="images/Carousel_Home2.jpg">
         </div>
         <div class="carousel-cell">
-                <img src="images/Carousel_Home4.jpg">
+          <img src="images/Carousel_Home3.jpg">
         </div>
         <div class="carousel-cell">
-                <img src="images/Carousel_Home5.jpg">
+          <img src="images/Carousel_Home4.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="images/Carousel_Home5.jpg">
         </div>
     </div>
 
@@ -48,7 +95,7 @@
     <link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
   </main>
 
-       <h1>  </h1>
+       <h1> History </h1>
     <div class = "homePageContent">
       Back in 1992, we came to this tranquil place in northern Ohio because
 we sorely needed a vacation. We found, in this special place,
@@ -74,6 +121,9 @@ the soul.”
 We promise, we will take great care of your while you stay and
 ensure you have the perfect Ohio getaway that you are yearning for.
     </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript"src="script.js"></script>
 
   </body>
 
