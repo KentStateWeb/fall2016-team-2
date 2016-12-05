@@ -31,7 +31,7 @@ header
 }
 
 /* Hamburger Menu*/
-.menuBar li{
+.menuBar{
   display:flex;
 }
 
@@ -147,33 +147,6 @@ nav[role=navigation] {
 }
 
 
-/*footer*/
-
-footer
-{
-  background-color: #ededed;
-  color: #61574B;
-  font-family: 'Varela Round', sans-serif;
-  display:flex;
-}
-
-.footerBar li {
-  list-style: none;
-}
-
-.footerLogo {
-  width: 100px;
-}
-
-.footerSM{
-  width: 60px;
-}
-
-#footerIcons{
-  margin-left: auto;
-  border: none;
-}
-
 /* Carousel Styling */
 
 /* position dots in carousel */
@@ -276,7 +249,7 @@ li a:hover, .dropdown:hover .dropbtn{
     color: rgb(169,169,169);
 }
 
-.menuBar ul, li{
+.menuBar{
   list-style-type: none;
   display: flex;
   color: #61574B;
@@ -295,4 +268,104 @@ li a:hover, .dropdown:hover .dropbtn{
 {
 .menuBar{
   flex-grow: 1;
-}}
+}
+
+/*Amenities Page*/
+
+
+
+.AmenitiesLists{
+  color: #ededed;
+  font-family:'Raleway', sans-serif;
+}
+ /*text*/
+.AMEMGR{
+  text-align: left;
+  float: left;
+}
+
+ /*photo*/
+ .AMENP img{
+   float: right;
+   width: 310px
+ }
+
+ /*text*/
+.AMENCR {
+  text-align: left
+  float: right;
+}
+
+ /*photo*/
+ .AMENP2 img{
+   float: left;
+   width: 310px;
+   padding: 1em;
+ }
+
+.AmenBody{
+  text-align: left;
+}
+
+.AmenHeader{
+    text-align: left;
+}
+
+.AmenRule{
+/*ADD GREEN RULE*/
+}
+
+/*button*/
+.btn {
+  background: #68703C;
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family:'Varela Round', sans-serif;
+  color: #ededed;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #cdcdcd;
+  text-decoration: none;
+}
+
+
+
+/*footer*/
+
+footer
+{
+  background-color: #ededed;
+  color: #61574B;
+  font-family: 'Varela Round', sans-serif;
+  display:flex;
+}
+
+.footerBar {
+  list-style: none;
+  color: #61574B;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.footerBar a{
+  font-weight: bold;
+  color: #61574B;}
+}
+
+.footerLogo{
+  width: 130px;
+}
+
+.footerSM{
+  width: 60px;
+  text-decoration: none;
+}
+
+#footerIcons{
+  margin-left: auto;
+  border: none;
+}

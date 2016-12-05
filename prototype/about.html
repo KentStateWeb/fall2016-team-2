@@ -10,24 +10,83 @@
   </head>
 
   <header>
-    [Buckeye Bed & Breakfast Logo]
-  </br>
-  </br>
-    Reservations
+    <a href="index.html"><img class = "bbbMenuLogo" src = "images/buckeye.svg"/></a>
+    <a href="#menu" class="menu-link">
+    <div class="menu-link__hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    </a>
+
+    <nav class="menuBar" role="navigation">
+                <ul class = "menuListItems">
+                  <li>
+                    <div class = "dropdown">
+                      <button class = "dropbtn">About Us</button>
+                      <div class = "dropdown-content">
+                      <a href = "#">Amenities</a>
+                      <a href = "#">Contact Info & Location</a>
+                      <a href = "#">History</a>
+                      <a href = "#">Policies</a>
+                      <a href = "#">Reviews</a>
+                    </div>
+                  </div>
+                  </li>
+                    <li>
+                      <div class = "dropdown">
+                        <button class = "dropbtn">Attractions & Activities</button>
+                        <div class = "dropdown-content">
+                        <a href = "#">Activities</a>
+                        <a href = "#">Dining</a>
+                    </li>
+                    <li>
+                      <div class = "regular-menu-item">
+                        <button class = "dropbtn">Blog</button>
+                        <div class = "menu-content">
+                    </li>
+                    <li>
+                      <div class = "regular-menu-item">
+                        <button class = "dropbtn">Packages & Promotions</button>
+                        <div class = "menu-content">
+                    </li>
+                    <li>
+                      <div class = "dropdown">
+                        <button class = "dropbtn">Rooms & Rates</button>
+                        <div class = "dropdown-content">
+                        <a href = "#">Availability</a>
+                        <a href = "#">Rooms</a>
+                    </li>
+                </ul>
+    </nav>
 </header>
 
 <body>
   <main>
       <link href="style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
 
-      <h1>Amenities</h1>
-      <p>Located just 45 minutes northeast of Columbus and 80 minutes south of Cleveland, Buckeye Bed and Breakfast is the perfect location for a special occasion or weekend getaway. Our Lakeside cottage provides a cozy atmosphere with privacy and peaceful, serene surroundings for a relaxing getaway. Our spectacular setting offers breathtaking views of Lake Buckhorn and the surrounding scenic wooded areas. The grounds feature beautiful walking and hiking trails, a beautiful courtyard and garden, creeks, outdoor patios and scenic rooftop decks. Canoes and bikes are available on request along with maps of the grounds. </p>
+      <h1 class=AmenHeader> Amenities </h1>
+
+      <p class=AmenBody>Located just 45 minutes northeast of Columbus and 80 minutes south of Cleveland,
+        Buckeye Bed and Breakfast is the perfect location for a special occasion or weekend getaway.
+        Our Lakeside cottage provides a cozy atmosphere with privacy and peaceful, serene surroundings
+        for a relaxing getaway. Our spectacular setting offers breathtaking views of Lake Buckhorn and the
+        surrounding scenic wooded areas. The grounds feature beautiful walking and hiking trails, a beautiful
+        courtyard and garden, creeks, outdoor patios and scenic rooftop decks. Canoes and bikes are available on
+        request along with maps of the grounds. </p>
 
       <img src="https://i.homeadore.com/2013/12/008-whitewashed-lake-cabin-jessica-jubelirer-design.jpg" alt="B&B Common Space" />
 
-      <h2>Guest Room Amenities</h2>
-      <h4>Each Room at Buckeye Bed & Breakfast Offers:</h4>
-      <ul>
+      <h2 class=AmenHeader>Guest Room Amenities</h2>
+
+
+      <div class="AMENP">
+        <img src="images/Amenities_Bathroom.jpg" alt="Guest Bathroom Photo">
+      </div>
+
+  <div class="AMENGR">
+
+      <ul class=AmenitiesLists>
         <li>Private and Luxurious Bath</li>
         <li>Whirlpool tub on each rooftop deck</li>
         <li>Comfortable living and sitting area</li>
@@ -39,13 +98,23 @@
         <li>Smart TV in the Bedroom and living room</li>
         <li>Wireless internet access</li>
         <li>Mini Refrigerator and Microwave</li>
-        <li>Indoor electric fireplace and outdoor wood fireplace (with firewood supplied on request)</li>
+        <li>Outdoor wood fireplace (with firewood supplied on request)</li>
         <li>Private Rooftop deck</li>
         <li>Private patio with seating for four</li>
       </ul>
+      </div>
 
-      <h2>Common Area Amenities</h2>
-      <ul>
+<br class=AmenRule>
+
+      <h2 class=AmenHeader>Common Area Amenities</h2>
+
+<div class="AMENP2">
+<img src="images/Amenities_DiningRM.jpg" alt="Dining Photo">
+</div>
+
+<div class="AMENCR"
+
+      <ul class=AmenitiesLists>
         <li>A library full of books for your reading enjoyment</li>
         <li>Wireless internet access</li>
         <li>Keurig with an assortment of tea and coffee options</li>
@@ -53,6 +122,10 @@
         <li>Ice machine</li>
         <li>Menus for all the recommended restaurants in the area</li>
         <li>Personal and friendly service to help with any arrangements or needs</li>
+</div>
+
+
+<br>
   </main>
 
 </body>
@@ -64,8 +137,10 @@
       <li>Buckeye Bed & Breakfast</li>
       <li>601 Turner Ave. </li>
       <li>Cambridge, OH 43725 </li>
-      <li>(330)215-4489
-      </ul>
+      <li>(330)215-4489 </li>
+      <li><a href="mailto:buckeyeb&b@gmail.com">
+   buckeyeb&b@gmail.com</a></li>
+    </ul>
 
       <div id="footerIcons">
 
