@@ -210,15 +210,7 @@ nav[role=navigation] {
 
 
 
-@media screen and (max-width: 1023px)
-{
-  .bbbMenuLogo{
-    padding-top: 3em;
-  }
-  .menuBar li{
-    padding: 0em;
-  }
-}
+
 
 /*footer*/
 footer
@@ -361,6 +353,7 @@ padding: 3em;
 }
 
 #calendar .hastask{
+  background-color: gray;
   font-weight: bold;
 }
 
