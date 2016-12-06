@@ -1,71 +1,92 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Title Goes Here</title>
-    <meta name="description" content="Page Description Goes Here">
-  </head>
-  <body>
-      <link href="practice.css" rel="stylesheet" type="text/css" media="screen" />
-    <header>
+
+      <link href="practice.css" rel="stylesheet" type="text/css" media="screen"/>
       <header>
       <a href="index.html"><img class = "bbbMenuLogo" src = "images/buckeye.svg"/></a>
+      <header>
       <a href="#menu" class="menu-link">
-      <div class="menu-link__hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-      </div>
+      	<div class="menu-link__hamburger">
+      		<span></span>
+      		<span></span>
+      		<span></span>
+      	</div>
+      	<div class="menu-link__label">Menu</div>
       </a>
 
-      <nav class="menuBar" role="navigation">
-                  <ul class = "menuListItems">
-                    <li>
-                      <div class = "dropdown">
-                        <button class = "dropbtn">About Us</button>
-                        <div class = "dropdown-content">
-                        <a href = "#">Amenities</a>
-                        <a href = "#">Contact Info & Location</a>
-                        <a href = "#">History</a>
-                        <a href = "#">Policies</a>
-                        <a href = "#">Reviews</a>
-                      </div>
-                    </div>
-                    </li>
-                      <li>
-                        <div class = "dropdown">
-                          <button class = "dropbtn">Attractions & Activities</button>
-                          <div class = "dropdown-content">
-                          <a href = "#">Activities</a>
-                          <a href = "#">Dining</a>
-                      </li>
-                      <li>
-                        <div class = "regular-menu-item">
-                          <button class = "dropbtn">Blog</button>
-                          <div class = "menu-content">
-                      </li>
-                      <li>
-                        <div class = "regular-menu-item">
-                          <button class = "dropbtn">Packages & Promotions</button>
-                          <div class = "menu-content">
-                      </li>
-                      <li>
-                        <div class = "dropdown">
-                          <button class = "dropbtn">Rooms & Rates</button>
-                          <div class = "dropdown-content">
-                          <a href = "#">Availability</a>
-                          <a href = "#">Rooms</a>
-                      </li>
-                  </ul>
+      <nav id="menu" role="navigation">
+      			<ul>
+      				<li><a href="#">About Us</a></li>
+      				<li><a href="about.html">Amenities</a></li>
+      				<li><a href="#">Blog</a></li>
+      				<li><a href="#">Packages & Promotions</a></li>
+      				<li><a href="reservations.html"> Rooms & Rates</a></li>
+      			</ul>
       </nav>
       </header>
-</header>
+
   <main>
-    <div class = "calendarBox">
-      I'm a Calendar
-    </div>
+    <h1 class = "reservationsHeader"> Reservations </h1>
+    </br>
+    <h2 class = "reservationsGreeting"> Select a date for a relaxing getaway </h2>
+    <!-- Calendar Box -->
+    <div id="calendar">
+    <h1>December 2016</h1>
+    <table>
+      <tr class = weekdays>
+        <td>S</td>
+        <td>M</td>
+        <td>T</td>
+        <td>W</td>
+        <td>Tr</td>
+        <td>F</td>
+        <td>S</td>
+      <tr>
+        <td class="lastmonth">27</td>
+        <td class="lastmonth">28</td>
+        <td class="lastmonth">29</td>
+        <td class="lastmonth">30</td>
+        <td class="hastask">1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td class="current">6</td>
+        <td>7</td>
+        <td>8</td>
+        <td class="hastask">9</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td class="hastask">12</td>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+      </tr>
+      <tr><td class="hastask">18</td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+        <td>22</td>
+        <td class="hastask">23</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>26</td>
+        <td class="hastask">27</td>
+        <td>28</td>
+        <td>29</td>
+        <td>30</td>
+        <td>31</td>
+      </tr>
+    </table>
+  </div>
+
+    <!-- End of Calendar Box -->
 <section class = "reservationsBoxes">
     <div class = "reservationContentBox">
       Location
@@ -75,11 +96,14 @@
     </div>
   </section>
   </main>
-  </body>
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script type="text/javascript"src="script.js"></script>
+
+  </body>
     <footer>
       <img class="footerLogo" src="images/B.svg" alt="B logo">
-
       <ul class="footerBar">
         <li>Buckeye Bed & Breakfast</li>
         <li>601 Turner Ave. </li>
@@ -88,17 +112,13 @@
         <li><a href="mailto:buckeyeb&b@gmail.com">
        buckeyeb&b@gmail.com</a></li>
         </ul>
-
         <div id="footerIcons">
-
         <a href="https://twitter.com/tcronieeeee">
         <img class="footerSM" src="images/twitter.svg" alt="Twitter Icon">
       </a>
-
         <a href="https://www.facebook.com/lauren.rhinehalt">
         <img class="footerSM" src="images/facebook.svg" alt="Facebook Icon">
       </a>
-
         </div>
       </footer>
 </html>
