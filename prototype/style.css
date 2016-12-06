@@ -18,19 +18,56 @@ header, footer
   font-family: 'Varela Round', sans-serif;
 }
 
-.reservationsHeader, .reservationsGreeting, .welcomeHeader, .welcomePageAboutUs{
+.reservationsHeader, .reservationsGreeting, .AmenHeader{
   font-family: 'Raleway'
 }
-.reservationsHeader, .reservationsGreeting, .welcomeHeader{
-  color: #ededed;
+.reservationsHeader, .reservationsGreeting, .welcomeHeader, .welcomePageAboutUs, .AmenHeader{
   text-align: center;
   padding: .5em;
+  color: #ededed;
 }
+
+.AmenBody{
+  color: #ededed;
+}
+
+
+.reservationsHeader, .reservationsGreeting, .welcomeHeader, .welcomePageAboutUs{
+
+}
+
+.reservationsHeader, .reservationsGreeting, .welcomeHeader{
+  font-style: bold;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px
+}
+
 .reservationsHeader, .welcomeHeader{
   font-style: bold;
   letter-spacing: 1px;
   text-shadow: 1px 1px 1px
 
+}
+
+/*button*/
+.btn {
+  background: #68703C;
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family:'Varela Round', sans-serif;
+  color: #ededed;
+  font-size: 20px;
+  padding: 4em;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.btn:hover {
+  background: #cdcdcd;
+  text-decoration: none;
 }
 
 .bbbMenuLogo{
@@ -40,15 +77,17 @@ header, footer
   float: left;
   padding-top: 1em;
   padding-left: 1em;
+  padding-bottom: .5em;
 }
 
-/* Menu Bar */
+/* Menu */
 header{
 	background-color:#ededed;
 }
 
-#menu{
-	font-family
+a.menu{
+  text-style: none;
+
 }
 a.menu-link {
   	    float: right;
@@ -58,7 +97,6 @@ a.menu-link {
 		}
 
 /* Adds Code for Pure CSS Hamburger Button */
-
 .menu-link__hamburger {
 	margin: 0 auto;
 	text-align: center;
@@ -71,6 +109,8 @@ a.menu-link {
 .menu-link__label {
 	float: left;
 	padding-left: .75em;
+  color: #61574B;
+
 }
 
 a.menu-link span {
@@ -78,7 +118,7 @@ a.menu-link span {
   height: 5px;
   margin-bottom: 5px;
   position: relative;
-  background: #cdcdcd;
+  background: #61574B;
   border-radius: 3px; /* Adjust the rounding of the hamburger here */
   z-index: 1;
   transform-origin: 4px 0px;
@@ -164,40 +204,16 @@ nav[role=navigation] {
 		}
 
 
-@media screen and (min-width: 550px){
-.menuBar ul,li{
-  flex-wrap: wrap;
-  display: flex;
 
-  }
-  .reservationContentBox{
-    width: 50%;
-  }
-}
 
-.menu-content, .regular-menu-item, .dropdown, .dropdown-content, .dropbtn{
-  background-color: #ededed;
-  color:#61574B;
-}
 
-.menu-content, .dropdown-content,.dropbtn{
-  padding: 1em;
-}
 
-.menuListItems{
 
-}
-
-@media screen and (min-width: 550px)
-{
-.menuBar{
-  flex-grow: 1;
-}}
 
 @media screen and (max-width: 1023px)
 {
   .bbbMenuLogo{
-    padding-top: 4em;
+    padding-top: 3em;
   }
   .menuBar li{
     padding: 0em;
@@ -259,6 +275,11 @@ padding: 3em;
 {
   .reservationsBoxes{
     display: flex;
+
+}
+  .reservationContentBox{
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 800px){
@@ -415,78 +436,72 @@ padding: 3em;
 
 .AmenBody{
   text-align: left;
+  padding-left: 1em;
+  font-family: 'Varela Round';
+    margin-bottom: 1em;
 }
 
 .AmenHeader{
     text-align: left;
 }
 
-.AmenRule{
-/*ADD GREEN RULE*/
+
+
+.amenitiesPictureBox{
+
+  display: block;
+  align: vertical;
+  margin: auto;
+  width: 50%;
 }
 
-/*button*/
-.btn {
-  background: #68703C;
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  border-radius: 10px;
-  font-family:'Varela Round', sans-serif;
+.AmenitiesLists{
   color: #ededed;
-  font-size: 20px;
-  padding: 4em;
-  text-align: center;
-  text-decoration: none;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  font-family:'Raleway', sans-serif;
+  list-style-type: none;
 }
 
-.btn:hover {
-  background: #cdcdcd;
-  text-decoration: none;
+.GuestAmenitiesBox{
+    background-image: url("images/Amenities_Bathroom.jpg");
+    margin-right: 5px;
+}
+
+.CommonAmenitiesBox{
+    background-image: url("images/Amenities_DiningRM.jpg");
+    margin-left: 5px;
+
+
+}
+
+.GuestAmenitiesBox, .CommonAmenitiesBox{
+  background-size: cover;
+  border-radius: 5px;
+  margin-bottom: 2em;
+  padding: 1em;
 }
 
 
-
-/*footer*/
-
-footer
+.innerBox{
+  background-color: rgba(104, 112, 60, .9);
+  color: #ededed;
+  padding: 1em;
+  border: 2px #white;
+  text-align: left;
+}
+@media screen and (min-width: 550px)
 {
-  background-color: #ededed;
-  color: #61574B;
-  font-family: 'Varela Round', sans-serif;
-  display:flex;
-}
-
-.footerBar {
-  list-style: none;
-  color: #61574B;
-  font-family: 'Varela Round', sans-serif;
-}
-
-.footerBar a{
-  font-weight: bold;
-  color: #61574B;}
-}
-
-.footerLogo{
-  width: 130px;
-}
-
-.footerSM{
-  width: 60px;
-  text-decoration: none;
-}
-
-#footerIcons{
-  margin-left: auto;
-  border: none;
-}
-
-@media and screen (min-width: 550px){
-  .homePageButtons{
+  .outerAmenitiesBox{
     display: flex;
-    flex: grow;
-    margin: 5px;
   }
+  .CommonAmenitiesBox{
+    width: 50%;
+  }
+  .GuestAmenitiesBox{
+    width:50%;
+    display: flex;
+    align-items: center;
+  }
+}
+.AmenBoxHeader{
+  color: #61574B;
 }

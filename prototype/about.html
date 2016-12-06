@@ -11,49 +11,28 @@
 
   <header>
   <a href="index.html"><img class = "bbbMenuLogo" src = "images/buckeye.svg"/></a>
-  <nav class="menuBar" role="navigation">
-              <ul class = "menuListItems">
-                <li>
-                  <div class = "dropdown">
-                    <button class = "dropbtn">About Us</button>
-                    <div class = "dropdown-content">
-                    <a href = "about.html">Amenities</a>
-                    <a href = "#">Contact Info & Location</a>
-                    <a href = "#">History</a>
-                    <a href = "#">Policies</a>
-                    <a href = "#">Reviews</a>
-                  </div>
-                </div>
-                </li>
-                  <li>
-                    <div class = "dropdown">
-                      <button class = "dropbtn">Attractions & Activities</button>
-                      <div class = "dropdown-content">
-                      <a href = "#">Activities</a>
-                      <a href = "#">Dining</a>
-                  </li>
-                  <li>
-                    <div class = "regular-menu-item">
-                      <button class = "dropbtn">Blog</button>
-                      <div class = "menu-content">
-                  </li>
-                  <li>
-                    <div class = "regular-menu-item">
-                      <button class = "dropbtn">Packages & Promotions</button>
-                      <div class = "menu-content">
-                  </li>
-                  <li>
-                    <div class = "dropdown">
-                      <button class = "dropbtn">Rooms & Rates</button>
-                      <div class = "dropdown-content">
-                      <a href = "reservations.html">Availability</a>
-                      <a href = "#">Rooms</a>
-                  </li>
-              </ul>
-  </nav>
-  </header>
+  <a href="#menu" class="menu-link">
+	<div class="menu-link__hamburger">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div class="menu-link__label">Menu</div>
+</a>
+
+<nav id="menu" role="navigation">
+			<ul>
+				<li><a href="#">About Us</a></li>
+				<li><a href="about.html">Amenities</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Packages & Promotions</a></li>
+				<li><a href="reservations.html"> Rooms & Rates</a></li>
+			</ul>
+</nav>
+</header>
+
 <body>
-  <main>
+    <main>
       <link href="style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
 
       <h1 class=AmenHeader> Amenities </h1>
@@ -66,18 +45,17 @@
         courtyard and garden, creeks, outdoor patios and scenic rooftop decks. Canoes and bikes are available on
         request along with maps of the grounds. </p>
 
-      <img src="https://i.homeadore.com/2013/12/008-whitewashed-lake-cabin-jessica-jubelirer-design.jpg" alt="BB Common Space" />
-
-      <h2 class=AmenHeader>Guest Room Amenities</h2>
 
 
-      <div class="AMENP">
-        <img src="images/Amenities_Bathroom.jpg" alt="Guest Bathroom Photo">
-      </div>
 
-  <div class="AMENGR">
 
-      <ul class=AmenitiesLists>
+
+<div class = "outerAmenitiesBox">
+  <div class="GuestAmenitiesBox">
+          <h2 class="AmenBoxHeader">Guest Room Amenities</h2>
+    <div class = "innerBox">
+
+      <ul class="AmenitiesLists">
         <li>Private and Luxurious Bath</li>
         <li>Whirlpool tub on each rooftop deck</li>
         <li>Comfortable living and sitting area</li>
@@ -93,19 +71,16 @@
         <li>Private Rooftop deck</li>
         <li>Private patio with seating for four</li>
       </ul>
+    </div>
       </div>
 
-<br class=AmenRule>
 
-      <h2 class=AmenHeader>Common Area Amenities</h2>
 
-<div class="AMENP2">
-<img src="images/Amenities_DiningRM.jpg" alt="Dining Photo">
-</div>
+<div class="CommonAmenitiesBox">
+  <h2 class="AmenBoxHeader">Common Area Amenities</h2>
+  <div class = "innerBox">
 
-<div class="AMENCR"
-
-      <ul class=AmenitiesLists>
+      <ul class="AmenitiesLists">
         <li>A library full of books for your reading enjoyment</li>
         <li>Wireless internet access</li>
         <li>Keurig with an assortment of tea and coffee options</li>
@@ -113,15 +88,21 @@
         <li>Ice machine</li>
         <li>Menus for all the recommended restaurants in the area</li>
         <li>Personal and friendly service to help with any arrangements or needs</li>
-</div>
+      </div>
+  </div>
+  </div>
 
-
-<br>
   </main>
 
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript"src="script.js"></script>
 </body>
 
-  <footer>
+<footer>
     <img class="footerLogo" src="images/B.svg" alt="B logo">
 
     <ul class="footerBar">
