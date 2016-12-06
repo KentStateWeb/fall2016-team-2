@@ -496,3 +496,13 @@ padding: 3em;
 .AmenBoxHeader{
   color: #61574B;
 }
+
+.welcomePageAboutUs{
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+
+}
+
+.welcomeHeader{
+  font-family: 'Varela Round', sans-serif;
+}
