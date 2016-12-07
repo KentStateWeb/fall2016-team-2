@@ -398,6 +398,7 @@ padding: 3em;
   font-family: 'Raleway', sans-serif;
   list-style-type: none;
   margin-bottom: 2em;
+  margin-left: 1em;
 
 }
 
@@ -411,7 +412,7 @@ padding: 3em;
 }
 
 .AmenTopImage{
-  width: 90%;
+  width: 95%;
   margin-bottom: 2em;
   margin-top: 2em;
   display: block;
@@ -423,6 +424,7 @@ padding: 3em;
   color: #ededed;
   font-family:'Raleway', sans-serif;
   list-style-type: circle;
+  margin-left: 1.5em;
 }
 
 .AmenBody{
@@ -445,7 +447,8 @@ padding: 3em;
 .AmenBoxHeader{
   margin-bottom: 1em;
   font-family:'Raleway', sans-serif;
-  color: #ededed
+  color: #ededed;
+  margin-left: 1em;
 }
 
 .GuestAmenitiesBox, .CommonAmenitiesBox{
