@@ -11,12 +11,21 @@ body{
   background-color: #61574B;
 }
 
+img {
+  max-width: 100%;
+}
+
 header, footer
 {
   background-color: #ededed;
   color: #61574B;
   font-family: 'Varela Round', sans-serif;
 }
+
+a:link{
+  text-decoration: none;
+}
+
 
 .reservationsHeader, .reservationsGreeting, .AmenHeader{
   font-family: 'Raleway'
@@ -32,23 +41,6 @@ header, footer
 }
 
 
-.reservationsHeader, .reservationsGreeting, .welcomeHeader, .welcomePageAboutUs{
-
-}
-
-.reservationsHeader, .reservationsGreeting, .welcomeHeader{
-  font-style: bold;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 1px
-}
-
-.reservationsHeader, .welcomeHeader{
-  font-style: bold;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 1px
-
-}
-
 /*button*/
 .btn {
   background: #68703C;
@@ -58,17 +50,20 @@ header, footer
   font-family:'Varela Round', sans-serif;
   color: #ededed;
   font-size: 20px;
-  padding: 4em;
+  padding: 1.5em;
   text-align: center;
   text-decoration: none;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .btn:hover {
   background: #cdcdcd;
   text-decoration: none;
 }
+
+
+/* Menu */
 
 .bbbMenuLogo{
   width:150px;
@@ -80,7 +75,6 @@ header, footer
   padding-bottom: .5em;
 }
 
-/* Menu */
 header{
 	background-color:#ededed;
 }
@@ -203,23 +197,24 @@ nav[role=navigation] {
 			}
 		}
 
-
-
-
-
-
-
-
-
-
 /*footer*/
-footer
-{
-  background-color: #ededed;
-  color: #61574B;
 
+footer
+{ background-color: #ededed;
+  color: #61574B;
   display:flex;
   margin-top:5px;
+  align-items: center;
+  padding: 1em;
+}
+
+footer a:link{
+  color: #61574B;
+  text-decoration: underline;
+}
+
+footer a:link:hover{
+  color: grey
 }
 
 .footerBar li {
@@ -231,7 +226,7 @@ footer
 }
 
 .footerSM{
-  width: 60px;
+  width: 70px;
 }
 
 #footerIcons{
@@ -396,56 +391,49 @@ padding: 3em;
   display: none; /* hide :after */
 }
 
-/*Amenities Page*/
+/*About Us Page*/
+
+.AmenBottomList {
+  color: #ededed;
+  font-family: 'Raleway', sans-serif;
+  list-style-type: none;
+  margin-bottom: 2em;
+
+}
+
+.AmenBottomList a:link{
+  color: #ededed;
+  text-decoration: underline;
+}
+
+.AmenBottomList a:link:hover{
+  color: grey
+}
+
+.AmenTopImage{
+  width: 90%;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .AmenitiesLists{
   color: #ededed;
   font-family:'Raleway', sans-serif;
+  list-style-type: circle;
 }
- /*text*/
-.AMEMGR{
-  text-align: left;
-  float: left;
-}
-
- /*photo*/
- .AMENP img{
-   float: right;
-   width: 310px
- }
-
- /*text*/
-.AMENCR {
-  text-align: left
-  float: right;
-}
-
- /*photo*/
- .AMENP2 img{
-   float: left;
-   width: 310px;
-   padding: 1em;
- }
 
 .AmenBody{
   text-align: left;
   padding-left: 1em;
-  font-family: 'Varela Round';
-    margin-bottom: 1em;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 1em;
 }
 
 .AmenHeader{
-    text-align: left;
-}
-
-
-
-.amenitiesPictureBox{
-
-  display: block;
-  align: vertical;
-  margin: auto;
-  width: 50%;
+    text-align: center;
 }
 
 .AmenitiesLists{
@@ -454,14 +442,10 @@ padding: 3em;
   list-style-type: none;
 }
 
-.GuestAmenitiesBox{
-    background-image: url("images/Amenities_Bathroom.jpg");
-    margin-right: 5px;
-}
-
-.CommonAmenitiesBox{
-    background-image: url("images/Amenities_DiningRM.jpg");
-    margin-left: 5px;
+.AmenBoxHeader{
+  margin-bottom: 1em;
+  font-family:'Raleway', sans-serif;
+  color: #ededed
 }
 
 .GuestAmenitiesBox, .CommonAmenitiesBox{
@@ -471,7 +455,6 @@ padding: 3em;
   padding: 1em;
 }
 
-
 .innerBox{
   background-color: rgba(104, 112, 60, .9);
   color: #ededed;
@@ -479,23 +462,38 @@ padding: 3em;
   border: 2px #white;
   text-align: left;
 }
-@media screen and (min-width: 550px)
-{
-  .outerAmenitiesBox{
-    display: flex;
+
+.innerImage{
+  background-image: url(images/Amenities_Bathroom.jpg);
+  height: 500px;
+  background-size: cover;
+  padding: 1em;
+  background-position: center;
+}
+
+@media screen and (min-width: 800px) {
+
+  .GuestAmenitiesBox, .CommonAmenitiesBox{
+      display: flex;
   }
-  .CommonAmenitiesBox{
+
+  .innerBox, .innerImage{
     width: 50%;
   }
-  .GuestAmenitiesBox{
-    width:50%;
-    display: flex;
-    align-items: center;
+
+  .innerImage{
+    height: auto;
+  }
+
+  .CommonAmenitiesBox .innerBox {
+    order: 1;
+  }
+
+  .CommonAmenitiesBox .innerImage {
+    order: 2;
   }
 }
-.AmenBoxHeader{
-  color: #61574B;
-}
+
 
 .welcomePageAboutUs{
   font-family: 'Raleway', sans-serif;
