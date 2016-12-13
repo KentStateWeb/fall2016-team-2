@@ -22,6 +22,14 @@ header, footer
   font-family: 'Varela Round', sans-serif;
 }
 
+@media screen and (min-width: 801px){
+header{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+}
+
 a:link{
   text-decoration: none;
 }
@@ -595,8 +603,8 @@ footer a:link:hover{
   margin-left: 2em;
   font-family: 'Raleway', sans-serif;
   margin-right: 2em;
-  margin-top: 1em;
- padding: 1em;
+  margin-top: 3em;
+ padding: .75em;
  text-align: center;
  border-radius: 5px;
  color: #ededed;
