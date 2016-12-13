@@ -136,7 +136,6 @@ a.menu-link span:nth-child(3) {
 
 .menu-link.active span {
   opacity: 1;
-	background: black;
   transform: rotate(45deg) translate(-2px, -1px);
 }
 
@@ -173,6 +172,7 @@ nav[role=navigation] {
 		nav[role=navigation] li a {
 			display: block;
 			padding: 0.8em;
+      color: #61574B;
 			border-bottom: 1px solid #808080;
 		}
 
@@ -198,7 +198,6 @@ nav[role=navigation] {
 		}
 
 /*footer*/
-
 footer
 { background-color: #ededed;
   color: #61574B;
