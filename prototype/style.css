@@ -27,17 +27,44 @@ a:link{
 }
 
 
-.reservationsHeader, .reservationsGreeting, .AmenHeader{
-  font-family: 'Raleway'
-}
-.reservationsHeader, .reservationsGreeting, .welcomeHeader, .welcomePageAboutUs, .AmenHeader{
+.reservationsHeader, .welcomeHeader, .AmenHeader{
+  font-family: 'Varela Round', sans-serif;
   text-align: center;
   padding: .5em;
   color: #ededed;
 }
 
+hr{
+  margin-bottom: 2em;
+	color: #68703C;
+  background-color: #68703C;
+  border-top: 10px solid #68703c;
+  border-bottom: 1px solid #68703c;
+  border-left: 1px transparent;
+  border-right: 1px transparent;
+}
+
+.reservationsGreeting{
+  font-family: 'Raleway' sans-serif;
+  text-align: center;
+  padding: .5em;
+  color: #ededed;
+
+}
+
 .AmenBody{
   color: #ededed;
+}
+
+/*Home (Welcome Page)*/
+.welcomePageAboutUs{
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  color: #ededed;
+}
+
+.carousel-cell{
+  padding: 2em;
 }
 
 
@@ -259,6 +286,7 @@ footer a:link:hover{
 
 
 
+/*Calendar*/
 
 .calendarBox{
   border-style: solid;
@@ -367,8 +395,6 @@ footer a:link:hover{
 
 .weekdays td{
   font-weight: bold;
-
-
 }
 
 /* Carousel Styling */
@@ -451,9 +477,6 @@ footer a:link:hover{
   margin-bottom: 1em;
 }
 
-.AmenHeader{
-    text-align: center;
-}
 
 .AmenitiesLists{
   color: #ededed;
@@ -484,11 +507,19 @@ footer a:link:hover{
 }
 
 .innerImage{
-  background-image: url(images/Amenities_Bathroom.jpg);
   height: 500px;
   background-size: cover;
   padding: 1em;
+}
+
+.Image1{
+  background-image: url(images/Amenities_Bathroom.jpg);
   background-position: center;
+}
+
+.Image2{
+    background-image: url(images/Amenities_Common.jpg);
+    background-position: bottom;
 }
 
 @media screen and (min-width: 800px) {
@@ -513,27 +544,6 @@ footer a:link:hover{
     order: 2;
   }
 }
-
-
-.welcomePageAboutUs{
-  font-family: 'Raleway', sans-serif;
-  text-align: left;
-
-}
-
-.welcomeHeader{
-  font-family: 'Varela Round', sans-serif;
-}
-
-.carousel-cell{
-  padding: 2em;
-}
-
-
-
-
-
-
 
 
 
@@ -578,7 +588,7 @@ footer a:link:hover{
 
 .boxCaption {
   color: #61574B;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Raleway', sans-serif;
   display: block;
   text-align: left;
   padding: 0 1em;
@@ -587,7 +597,6 @@ footer a:link:hover{
   padding-bottom: 0px;
   padding-left: 1em;
   margin-bottom: 1em;
-  letter-spacing: 1px;
 }
 
 .boxbutton{
@@ -596,20 +605,14 @@ footer a:link:hover{
   font-family: 'Raleway', sans-serif;
   margin-right: 2em;
   margin-top: 1em;
+  margin-bottom: 1em;
  padding: 1em;
  text-align: center;
  border-radius: 5px;
  color: #ededed;
  font-weight: bold;
-
-
-
-
-
-  display: block;
-
+display: block;
 background-color: #68703C;
-
 }
 
 .reservationsBoxes{
@@ -652,4 +655,8 @@ border-radius: 5px;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.reservationsHeader{
+  margin-top: 1em;
 }

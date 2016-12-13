@@ -18,27 +18,48 @@
 
     <hr>
 
-    <h2>Typography</h2>
-    <ul><li>Raleway</li>
+    <h2 class="headings">Typography</h2>
+    <ul class= "TypeUL"><li>Raleway</li>
           <br>
       <li class= "LiVarela">Varela Round</li></ul>
 
     <hr>
 
-    <h2>Colors</h2>
+    <h2 class="headings">Colors</h2>
     <img class="ColorBoxes" src="images/PL_BrownBox.svg" alt="Brown Box">
     <img class="ColorBoxes" src="images/PL_GreyBox.svg" alt="Grey Box">
     <img class="ColorBoxes" src="images/PL_GreenBox.svg" alt="Green Box">
 
     <hr>
 
-    <h2>Navigation/Header</h2>
+    <h2 class="headings">Navigation/Header</h2>
 
-!!ADD HEADER CODE!!
+    <header>
+    <a href="index.html"><img class = "bbbMenuLogo" src = "images/buckeye.svg"/></a>
+    <a href="#menu" class="menu-link">
+  	<div class="menu-link__hamburger">
+  		<span></span>
+  		<span></span>
+  		<span></span>
+  	</div>
+  	<div class="menu-link__label">Menu</div>
+  </a>
+
+  <nav id="menu" role="navigation">
+  			<ul>
+          <li><a href="index.html">Home</a></li>
+  				<li><a href="about.html">About Us</a></li>
+  				<li><a href="#">Attractions</a></li>
+  				<li><a href="#">Blog</a></li>
+  				<li><a href="#">Packages & Promotions</a></li>
+  				<li><a href="reservations.html">Availability</a></li>
+  			</ul>
+  </nav>
+  </header>
 
     <hr>
 
-    <h2>Footer</h2>
+    <h2 class="headings">Footer</h2>
     <footer>
         <img class="footerLogo" src="images/B.svg" alt="B logo">
 
@@ -66,7 +87,7 @@
 
       <hr>
 
-      <h2>Buttons</h2>
+      <h2 class="headings">Buttons</h2>
 
       <div class = "homePageButtons">
       <a href="https://www.google.com/maps/place/Buckeye+Lake/@39.9209244,-82.5416795,12z/data=!3m1!4b1!4m5!3m4!1s0x883811f4c8e00811:0x2b2d40cfc96be104!8m2!3d39.9247576!4d-82.483398" target="_blank">
@@ -78,7 +99,7 @@
 
       <hr>
 
-      <h2>Paragraphs</h2>
+      <h2 class="headings">Paragraphs</h2>
 
       <p>Our ideal Ohio location falls just 45 minutes northeast of Columbus and 80 minutes
       south of Cleveland. Located on the beautiful Buckeye Lake, guests are engulfed
@@ -89,7 +110,8 @@
 
       <hr>
 
-      <h2>Photo/Text Boxes</h2>
+      <h2 class="headings">Photo/Text Boxes</h2>
+
       <div class = "outerAmenitiesBox">
 
         <div class="GuestAmenitiesBox">
@@ -118,9 +140,65 @@
 
         <hr>
 
-        <h2>Calendar</h2>
+        <h2 class="headings">Calendar</h2>
 
-!!ADD CALENDAR CODE!!
+        <div id="calendar">
+        <h1>December 2016</h1>
+        <table>
+          <tr class = weekdays>
+            <td>S</td>
+            <td>M</td>
+            <td>T</td>
+            <td>W</td>
+            <td>Th</td>
+            <td>F</td>
+            <td>S</td>
+          <tr>
+            <td class="lastmonth">27</td>
+            <td class="lastmonth">28</td>
+            <td class="lastmonth">29</td>
+            <td class="lastmonth">30</td>
+            <td class="hastask">1</td>
+            <td class="hastask">2</td>
+            <td class="hastask">3</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td class="hastask">9</td>
+            <td class="hastask">10</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td class="hastask">12</td>
+            <td class="current">13</td>
+            <td class="hastask">14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+          </tr>
+          <tr><td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td class="hastask">23</td>
+            <td class="hastask">24</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>26</td>
+            <td class="hastask">27</td>
+            <td class="hastask">28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+          </tr>
+        </table>
+      </div>
 
 
         <hr>
