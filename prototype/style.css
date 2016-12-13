@@ -34,7 +34,6 @@ a:link{
   text-decoration: none;
 }
 
-
 .reservationsHeader, .welcomeHeader, .AmenHeader{
   font-family: 'Varela Round', sans-serif;
   text-align: center;
@@ -50,14 +49,14 @@ hr{
   border-bottom: 1px solid #68703c;
   border-left: 1px transparent;
   border-right: 1px transparent;
+  border-radius: 5px;
 }
 
 .reservationsGreeting{
-  font-family: 'Raleway' sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   padding: .5em;
   color: #ededed;
-
 }
 
 .AmenBody{
@@ -73,6 +72,7 @@ hr{
 
 .carousel-cell{
   padding: 2em;
+  border-radius: 5px;
 }
 
 
@@ -93,13 +93,13 @@ hr{
 }
 
 .btn:hover {
-  background: #cdcdcd;
+  background: #ededed;
+  color: #68703C;
   text-decoration: none;
 }
 
 
 /* Menu */
-
 .bbbMenuLogo{
   width:150px;
   vertical-align: top;
@@ -107,7 +107,7 @@ hr{
   float: left;
   padding-top: 1em;
   padding-left: 1em;
-  padding-bottom: .5em;
+  padding-bottom: 1em;
 }
 
 #menu li{
@@ -143,7 +143,6 @@ a.menu-link {
 	float: left;
 	padding-left: .75em;
   color: #61574B;
-
 }
 
 a.menu-link span {
@@ -219,7 +218,11 @@ nav[role=navigation] {
       background-color: #61574B;
       color: #ededed;
     }
-
+    @media screen and (min-width: 801px){
+      #menu a{
+        border-radius: 5px;
+      }
+    }
 
     #menu a{
       color: #61574B;
@@ -253,11 +256,9 @@ nav[role=navigation] {
 			}
 		}
 
-
 /*footer*/
-
-footer
-{ background-color: #ededed;
+footer {
+  background-color: #ededed;
   color: #61574B;
   display:flex;
   margin-top:5px;
@@ -265,12 +266,12 @@ footer
   padding: 1em;
 }
 
-footer a:link{
+footer a:link {
   color: #61574B;
   text-decoration: underline;
 }
 
-footer a:link:hover{
+footer a:link:hover {
   color: grey
 }
 
@@ -292,10 +293,7 @@ footer a:link:hover{
   border: none;
 }
 
-
-
-/*Calendar*/
-
+/*Reservations*/
 .calendarBox{
   border-style: solid;
   border-width: 1px;
@@ -303,28 +301,23 @@ footer a:link:hover{
   padding: 6em;
   border-radius: 10px;
   margin: 5px;
-
 }
 
-@media screen and (min-width: 550px)
-{
+@media screen and (min-width: 550px){
   .reservationsBoxes{
     display: flex;
-
 }
   .reservationContentBox{
     width: 50%;
   }
 }
 
-
 .reservationContentBox:hover{
   opacity: 1.0;
-    filter: alpha(opacity=100);
+  filter: alpha(opacity=100);
 }
 
 /* Calendar */
-
 *{margin:0;padding:0;}
 
 #calendar{
@@ -352,7 +345,7 @@ footer a:link:hover{
 }
 
 #calendar *{
-    font-family: 'Varela Round', sans-serif;
+  font-family: 'Varela Round', sans-serif;
 }
 
 #calendar table{
@@ -373,12 +366,10 @@ footer a:link:hover{
   cursor:pointer;
   transition:background .3s;
   -webkit-transition:background .3s;
-
 }
 
 #calendar td:hover:not(.current){
   background:#ddd;
-
 }
 
 #calendar .lastmonth,#calendar .nextmonth,#calendar .nextmonth ~ *{
@@ -390,7 +381,6 @@ footer a:link:hover{
   background:#68703C;
   font-weight:bold;
   color:#ededed;
-);
 }
 
 #calendar .hastask{
@@ -405,6 +395,120 @@ footer a:link:hover{
   font-weight: bold;
 }
 
+/* Reervation Boxes*/
+*{
+  box-sizing: border-box;
+}
+.boxPhotos{
+  width: 100%;
+  object-fit: cover;
+  height: 245px;
+  border-bottom: 0.5em solid #68703C;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.boxText{
+  position: static;
+  left: .5em;
+  right: .5em;
+  bottom: 0;
+  height: auto;
+}
+
+.boxHeader{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.4;
+  color: #68703C;
+  margin-top: 1.5em;
+  margin-right: 0px;
+  margin-bottom: 1.5em;
+  margin-left: 0px;
+  font-style: italic;
+  font-size: 24px;
+  display: block;
+}
+
+.boxCaption {
+  color: #61574B;
+  font-family: 'Raleway', sans-serif;
+  display: block;
+  text-align: left;
+  padding: 0 1em;
+  padding-top: 5px;
+  padding-right: 1em;
+  padding-bottom: 0px;
+  padding-left: 1em;
+  margin-bottom: 1em;
+}
+
+.boxbutton{
+  margin-left: 2em;
+  font-family: 'Raleway', sans-serif;
+  margin-right: 2em;
+  margin-top: 3em;
+  padding: .75em;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  padding: 1em;
+  text-align: center;
+  border-radius: 5px;
+  color: #ededed;
+  font-weight: bold;
+  display: block;
+  background-color: #68703C;
+}
+
+.boxbutton:hover{
+  opacity: .75;
+  cursor:pointer;
+}
+
+.reservationsBoxes{
+  position: relative;
+  border-radius: 5px;
+}
+
+.reservationContentBox1, .reservationContentBox2{
+  margin-top: 1em;
+  background-color: #ededed;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  padding: .5em;
+}
+
+/* Give space between two boxes*/
+@media screen and (min-width: 551px){
+.reservationContentBox1{
+  margin-right: .5em;
+}
+
+.reservationContentBox2{
+  margin-left: : .5em;
+}
+}
+
+@media screen and (min-width: 550px)
+{
+  .reservationsBoxes{
+    display: flex;
+
+}
+  .reservationContentBox{
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 551px){
+.reservationsHeader{
+  margin-top: 1em;
+}
+}
+
+/*Home Page*/
 /* Carousel Styling */
 /* position dots in carousel */
 .flickity-page-dots {
@@ -425,7 +529,6 @@ footer a:link:hover{
 
 /* If you're using images in your slider, add this CSS to ensure they take up 100% of the available area */
 .carousel-cell {
-
     margin: auto;
     width: 100%;
 }
@@ -435,7 +538,6 @@ footer a:link:hover{
     height: auto;
 }
 
-
 /* Ensures that Flickity waits until CSS has loaded to calculate the height of the cells */
 .carousel:after {
   content: 'flickity';
@@ -443,14 +545,12 @@ footer a:link:hover{
 }
 
 /*About Us Page*/
-
 .AmenBottomList {
   color: #ededed;
   font-family: 'Raleway', sans-serif;
   list-style-type: none;
   margin-bottom: 2em;
   margin-left: 1em;
-
 }
 
 .AmenBottomList a:link{
@@ -463,12 +563,20 @@ footer a:link:hover{
 }
 
 .AmenTopImage{
-  width: 95%;
+  width: 100%;
+  display: block;
+  padding: .5em;
+  height: auto;
+  border-radius: 5px;
+}
+
+.amenitiesPictureBox{
+  background-color: #ededed;
+  width: 100%;
+  height: 100%;
   margin-bottom: 2em;
   margin-top: 2em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 5px;
 }
 
 .AmenitiesLists{
@@ -484,7 +592,6 @@ footer a:link:hover{
   font-family: 'Raleway', sans-serif;
   margin-bottom: 1em;
 }
-
 
 .AmenitiesLists{
   color: #ededed;
@@ -503,7 +610,8 @@ footer a:link:hover{
   background-size: cover;
   border-radius: 5px;
   margin-bottom: 2em;
-  padding: 1em;
+  padding: .5em;
+  background-color: #ededed;
 }
 
 .innerBox{
@@ -531,146 +639,19 @@ footer a:link:hover{
 }
 
 @media screen and (min-width: 800px) {
-
   .GuestAmenitiesBox, .CommonAmenitiesBox{
       display: flex;
   }
-
   .innerBox, .innerImage{
     width: 50%;
   }
-
   .innerImage{
     height: auto;
   }
-
   .CommonAmenitiesBox .innerBox {
     order: 1;
   }
-
   .CommonAmenitiesBox .innerImage {
     order: 2;
   }
-}
-
-
-
-/* Box testing */
-
-*{
-  box-sizing: border-box;
-}
-.boxPhotos{
-  width: 100%;
-  object-fit: cover;
-  height: 245px;
-  border-bottom: 0.5em solid #68703C;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-.boxText{
-  position: static;
-  left: .5em;
-  right: .5em;
-  bottom: 0;
-  height: auto;
-}
-
-
-
-.boxHeader{
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  line-height: 1.4;
-  color: #68703C;
-  margin-top: 1.5em;
-  margin-right: 0px;
-  margin-bottom: 1.5em;
-  margin-left: 0px;
-  font-style: italic;
-  font-size: 24px;
-  display: block;
-
-
-}
-
-.boxCaption {
-  color: #61574B;
-  font-family: 'Raleway', sans-serif;
-  display: block;
-  text-align: left;
-  padding: 0 1em;
-  padding-top: 5px;
-  padding-right: 1em;
-  padding-bottom: 0px;
-  padding-left: 1em;
-  margin-bottom: 1em;
-}
-
-.boxbutton{
-  margin: auto;
-  margin-left: 2em;
-  font-family: 'Raleway', sans-serif;
-  margin-right: 2em;
-<<<<<<< HEAD
-  margin-top: 3em;
- padding: .75em;
-=======
-  margin-top: 1em;
-  margin-bottom: 1em;
- padding: 1em;
->>>>>>> origin/master
- text-align: center;
- border-radius: 5px;
- color: #ededed;
- font-weight: bold;
-display: block;
-background-color: #68703C;
-}
-
-.reservationsBoxes{
-  position: relative;
-
-border-radius: 5px;
-}
-
-.reservationContentBox1, .reservationContentBox2{
-  margin-top: 1em;
-  background-color: #ededed;
-  border-radius: 5px;
-  margin-bottom: 1em;
-  padding: 3px;
-
-}
-
-.reservationContentBox1{
-  margin-right: .5em;
-}
-
-.reservationContentBox2{
-  margin-left: .5em;
-}
-
-@media screen and (min-width: 550px)
-{
-  .reservationsBoxes{
-    display: flex;
-
-}
-  .reservationContentBox{
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 551pxl){
-
-.reservationsContentBox2:hover{
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.reservationsHeader{
-  margin-top: 1em;
-}
 }
