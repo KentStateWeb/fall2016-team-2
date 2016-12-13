@@ -7,6 +7,13 @@ body{
   max-width: 1100px;
   margin: 0 auto;
 }
+@media screen and (min-width: 801px){
+header{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+}
 
 .headings{
   margin-bottom: 1em;
