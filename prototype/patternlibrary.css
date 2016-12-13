@@ -15,6 +15,12 @@ header{
 }
 }
 
+@media screen and (min-width: 801px){
+  #menu a{
+    border-radius: 5px;
+  }
+}
+
 .headings{
   margin-bottom: 1em;
 }
